@@ -1,0 +1,144 @@
+{
+  "options": {
+    "error": {
+      "temperature_not_found": "Δεν βρέθηκε αισθητήρας Θερμοκρασίας",
+      "humidity_not_found": "Δεν βρέθηκε αισθητήρας Υγρασίας"
+    },
+    "step": {
+      "init": {
+        "data": {
+          "temperature_sensor": "Αισθητήρας θερμοκρασίας",
+          "humidity_sensor": "Αισθητήρας Υγρασίας"
+        }
+      }
+    }
+  },
+  "config": {
+    "abort": {
+      "already_configured": "Αυτός ο συνδιασμός αισθητήρων θερμοκρασίας και υγρασίας έχει ήδη διαμορφωθεί",
+      "no_sensors": "Δεν βρέθηκαν αισθητήρες θερμοκρασίας και/ή υγρασίας. Προσπαθήστε ξανά σε προηγμένη λειτουργεία.",
+      "no_sensors_advanced": "Δεν βρέθηκαν αισθητήρες θερμοκρασίας και/ή υγρασίας."
+    },
+    "error": {
+      "temperature_not_found": "Δεν βρέθηκε αισθητήρας θερμοκρασίας.",
+      "humidity_not_found": "Δεν βρέθηκε αισθητήρας υγρασίας."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "name": "Όνομα",
+          "temperature_sensor": "Αισθητήρας θερμοκρασίας",
+          "humidity_sensor": "Αισθητήρας υγρασίας",
+          "custom_icons": "Χρήση πακέτου προσαρμοσμένων εικονιδίων",
+          "enabled_sensors": "Ενεργοί αισθητήρες"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "absolute_humidity": {
+        "name": "Απόλυτη υγρασία"
+      },
+      "dew_point": {
+        "name": "Σημείο δρόσου"
+      },
+      "dew_point_perception": {
+        "name": "Αντίληψη του σημείου δρόσου",
+        "state": {
+          "dry": "Λίγο ξηρό για κάποιους",
+          "very_comfortable": "Πολύ άνετα",
+          "comfortable": "Άνετα",
+          "ok_but_humid": "Εντάξει για τους περισσότερους, αλλά υγρά",
+          "somewhat_uncomfortable": "Κάπως άβολα",
+          "quite_uncomfortable": "Πολύ υγρά, αρκετά άβολα",
+          "extremely_uncomfortable": "Υπερβολικά άβολα, \"καταπιεστηκά\"",
+          "severely_high": "Σοβαρά υψηλό, ακόμα και θανατηφόρο για ασθένειες που σχετίζονται με το άσθμα"
+        }
+      },
+      "frost_point": {
+        "name": "Σημείο παγετού"
+      },
+      "frost_risk": {
+        "name": "Ρίσκο παγετού",
+        "state": {
+          "no_risk": "Χωρίς ρίσκο",
+          "unlikely": "Απίθανο",
+          "probable": "Πιθανό",
+          "high": "Υψηλή πιθανότητα"
+        }
+      },
+      "heat_index": {
+        "name": "Δείκτης θερμοκρασίας"
+      },
+      "humidex": {
+        "name": "Δείκτης υγρασίας"
+      },
+      "humidex_perception": {
+        "state": {
+          "comfortable": "Άνετα",
+          "noticable_discomfort": "Αισθητή δυσφορία",
+          "evident_discomfort": "Εμφανής δυσφορία",
+          "great_discomfort": "Μεγάλη δυσφορία, αποφύγετε την εξάντληση",
+          "dangerous_discomfort": "Επικίνδυνη δυσφορία",
+          "heat_stroke": "Πιθανότητα θερμοπληξίας"
+        }
+      },
+      "moist_air_enthalpy": {
+        "name": "Ενθαλπία υγρού αέρα"
+      },
+      "relative_strain_perception": {
+        "name": "Αντίληψη σχετικής καταπόνησης",
+        "state": {
+          "outside_calculable_range": "Εκτός του υπολογίσιμου εύρους",
+          "comfortable": "Άνετα",
+          "slight_discomfort": "Ελαφρά δυσφορία",
+          "discomfort": "Δυσφορία",
+          "significant_discomfort": "Σημαντική δυσφορία",
+          "extreme_discomfort": "Εξαιρετική δυσφορία"
+        }
+      },
+      "summer_scharlau_perception": {
+        "state": {
+          "outside_calculable_range": "Εκτός του υπολογίσιμου εύρους",
+          "comfortable": "Άνετα",
+          "slightly_uncomfortable": "Ελαφρώς άβολα",
+          "moderately_uncomfortable": "Μέτρια άβολα",
+          "highly_uncomfortable": "Ιδιαίτερα άβολα"
+        }
+      },
+      "winter_scharlau_perception": {
+        "state": {
+          "outside_calculable_range": "Εκτός του υπολογίσιμου εύρους",
+          "comfortable": "Άνετα",
+          "slightly_uncomfortable": "Ελαφρώς άβολα",
+          "moderately_uncomfortable": "Μέτρια άβολα",
+          "highly_uncomfortable": "Ιδιαίτερα άβολα"
+        }
+      },
+      "summer_simmer_perception": {
+        "state": {
+          "cool": "Δροσερά",
+          "slightly_cool": "Ελαφρώς δροσερά",
+          "comfortable": "Άνετα",
+          "slightly_warm": "Ελαφρώς ζεστά",
+          "increasing_discomfort": "Αυξανόμενη δυσφορία",
+          "extremely_warm": "Εξαιρετικά ζεστά",
+          "danger_of_heatstroke": "Κίνδυνος θερμοπληξίας",
+          "extreme_danger_of_heatstroke": "Ακραίος κίνδυνος θερμοπληξίας",
+          "circulatory_collapse_imminent": "Επικείμενη κυκλοφορική κατάρρευση"
+        }
+      },
+      "thoms_discomfort_perception": {
+        "state": {
+          "no_discomfort": "Καμία δυσφορία",
+          "less_than_half": "Λιγότερο από το ήμισυ του πληθυσμού αισθάνεται δυσφορία",
+          "more_than_half": "Περισσότερο από το ήμισυ του πληθυσμού αισθάνεται δυσφορία",
+          "most": "Τα περισσότερα άτομα αισθάνονται δυσφορία και επιδείνωση των ψυχοφυσικών συνθηκών",
+          "everyone": "Όλοι αισθάνονται σημαντική δυσφορία",
+          "dangerous": "Επικίνδυνα, πολύ έντονη δυσφορία που μπορεί να προκαλέσει θερμοπληξία"
+        }
+      }
+    }
+  }
+}
